@@ -8,10 +8,8 @@ const router = new Router();
  * 代理网站
  */
 router.all('/:path(.*)', async (ctx, next) => {
-  console.log(ctx.path)
-
-  if (ctx.path === '/user-center/api/v1/users/current-user') {
-    ctx.body = '123213'
+  if (ctx.path === '/routes-that-need-to-be-customized') {
+    ctx.body = 'This is an example.'
     ctx.set('Access-Control-Allow-Origin', '*')
     ctx.set('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-forwarded-host, authorization, Set-Cookie, x-forwarded-host')
     next()
