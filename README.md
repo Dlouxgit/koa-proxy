@@ -19,3 +19,5 @@
 接着全局搜索 `example`，并将它改为你想要自定义的域名，以及你需要的返回值。
 
 最后使用浏览器转发工具代理对应理由即可。
+
+![SwitchyOmega](./SwitchyOmega.png)
